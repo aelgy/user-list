@@ -1,0 +1,102 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">User List</a>
+      <form class="d-flex" role="search" id="search-form">
+        <label class="visually-hidden" for="inlineFormInputGroupUsername">Search Keyword</label>
+        <input class="form-control me-2" type="search" placeholder="Keyword..." aria-label="Search" id="search-input">
+        <button class="btn btn-outline-success" type="submit" id="search-submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div class="container mt-5">
+    <!-- <div class="row">
+      <form class="row row-cols-lg-auto g-3 align-items-center mb-2" id="search-form">
+        <div class="col-12">
+          <label class="visually-hidden" for="inlineFormInputGroupUsername">Search Keyword</label>
+          <input type="text" class="form-control" id="search-input" placeholder="keyword......">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" id="search-submit">Search</button>
+        </div>
+      </form> -->
+  </div>
+
+  <div class="row" id="data-panel">
+    <!-- List -->
+    <!--     <div class="col-sm-2">
+      <div class="mb-2">
+    <div class="card border-info text-center mb-3" style="width: 18rem;">
+    <img src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1" class="card-img-top" alt="user image">
+    <div class="card-body">
+      <h5 class="card-title">user name</h5>
+        <ul class="list-group list-group-flush card-info">
+          <li class="list-group-item card-info-surname">surname</li>
+          <li class="list-group-item card-info-birthday">birthday</li>
+        </ul>
+        <button type="button" 
+                class="btn btn-outline-info btn-show-info"
+                data-bs-toggle="modal"
+                data-bs-target="#info-modal"
+                >More information
+      </button>
+    </div>
+  </div>
+  </div>
+  </div>
+ -->
+  </div>
+  </div>
+
+  <!-- More Information -->
+  <div class="modal" id="info-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="info-modal-name">Name</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="info-modal-body">
+          <div class="row">
+            <div class="col-sm-6" id="info-modal-image">
+              <img src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1" alt="user-image"
+                class="img-fluid">
+            </div>
+            <div class="col-sm-6">
+              <ul id="info-modal-ul">
+                <li id="info-modal-birthday">12/14/1990</li>
+                <li id="info-modal-gender">male</li>
+                <li id="info-modal-age">29</li>
+                <li id="info-modal-region">Romania</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
